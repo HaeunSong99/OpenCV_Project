@@ -77,13 +77,13 @@ def main():
             draw_rectangle = not draw_rectangle
             print("rectangle")
 
-        # 누르면 fps 1 증가
+        # 누르면 fps 1 감소
         elif key == ord('a'):
             if output_fps > 1:
                 output_fps -= 1
                 print(f"Decreased FPS to {output_fps}")
 
-        # 누르면 fps 1 감소
+        # 누르면 fps 1 증가
         elif key == ord('b'): # shift나 caps lock을 통한 대문자 변환을 프로그램이 읽지 못해 b로 변경함
             output_fps += 1
             print(f"Increased FPS to {output_fps}")
